@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin:0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #212121;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background-color: blanchedalmond;
+    height: 500px;
+    width: 500px;
+    border-radius: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
+.heading h1{
+    font-size: 2rem;
+    margin: 10px;
+    padding: 10px;
+}
+.input{
+    margin: 10px;
+    width: 250px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+#btn{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #212121;
+    color: white;
+    border: 2px solid white;
+
+}
+#btn:hover{
+    transition: 0.5s;
+    background-color: white ;
+    color: #212121;
+    border: 2px solid black;
+}
+.AddItems{
+    width: 90%;
+    margin-left: 10px;
+}
+#list img{
+    height: 25px;
+    width: 25px;
+}
+#list {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#list li{
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+li.checked{
+    text-decoration: line-through;
+    /* cursor: pointer; */
+}
+#list h3{
+    width: 70%;
+}
+#list a{
+    width: 10%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+@media screen and (min-width: 0px) and (max-width: 600px) {
+    body{
+        height: 100vh;
+        width: 100vw;
+        background-color: blanchedalmond;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+    }
+}
