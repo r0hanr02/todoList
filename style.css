@@ -2,7 +2,7 @@
     padding: 0;
     margin:0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 body{
     height: 100vh;
@@ -67,25 +67,30 @@ body{
 }
 #list li{
     padding: 10px;
-    list-style: none;
+    /* list-style:; */
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: space-between;
 }
-li.checked{
+#list h3.checked{
     text-decoration: line-through;
     /* cursor: pointer; */
 }
 #list h3{
     width: 70%;
 }
-#list a{
+#list span{
     width: 10%;
     cursor: pointer;
     display: flex;
     align-items: center;
+    border-radius: 50%;
     justify-content: space-evenly;
+}
+#list span:hover{
+    transition: 2s;
+    background-color: #7c7676;
 }
 @media screen and (min-width: 0px) and (max-width: 600px) {
     body{

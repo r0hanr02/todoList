@@ -13,9 +13,9 @@ button.addEventListener("click",()=>{
         let h3=document.createElement("h3")
         h3.innerHTML=input.value
         li.appendChild(h3)
-        let a =document.createElement("a")
-        a.innerHTML = `<img src="wrong.webp" alt="delete">`
-        li.appendChild(a)
+        let span =document.createElement("span")
+        span.innerHTML = "\u00d7"
+        li.appendChild(span)
 
     }
     input.value="";
@@ -23,11 +23,11 @@ button.addEventListener("click",()=>{
 })
 
 addElement.addEventListener("click",(e)=>{
-    if(e.target.tagName==="LI"){
+    if(e.target.tagName==="H3"){
         e.target.classList.toggle("checked")
         saveData()
     }
-    else if(e.target.tagName =="A"){
+    else if(e.target.tagName ==="SPAN"){
         e.target.parentElement.remove()
         saveData()
     }
