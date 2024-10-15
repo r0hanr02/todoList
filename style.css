@@ -5,23 +5,27 @@
     font-size: 1.2rem;
 }
 body{
-    height: 100vh;
-    width: 100vw;
-    background-color: #212121;
+    height: 90%;
+    background-color: blanchedalmond;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
+    padding: 5%;
+    /* margin-top: 5%; */
+    
 }
 .container{
+    padding:5%;
     background-color: blanchedalmond;
-    height: 500px;
-    width: 500px;
+    height: 50%;
+    width: 50%;
     border-radius: 2%;
     display: flex;
     align-items: center;
     justify-content: start;
     flex-direction: column;
+    border: 2px solid black;
 }
 .heading h1{
     font-size: 2rem;
@@ -51,8 +55,7 @@ body{
     border: 2px solid black;
 }
 .AddItems{
-    width: 90%;
-    margin-left: 10px;
+    width: 100%;
 }
 #list img{
     height: 25px;
@@ -92,14 +95,26 @@ body{
     transition: 2s;
     background-color: #7c7676;
 }
+/* .container2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} */
 @media screen and (min-width: 0px) and (max-width: 600px) {
     body{
-        height: 100vh;
-        width: 100vw;
+
         background-color: blanchedalmond;
+        /* background-color: blanchedalmond; */
         display: flex;
         flex-direction: column;
         align-items: start;
         justify-content: start;
+    }
+    .container{
+        width: 85%; 
+    }
+    .input{
+        width: 130px;
     }
 }
